@@ -1,0 +1,23 @@
+QUESTIONÁRIO 1 - ARTIGO MAPREDUCE
+
+2 - Como funciona a função Map/Reduce
+
+RESPOSTA:
+Trata-se de um modelo de programação e framework introduzido pelo Google (conforme artigo de Jeffrey Dean e Sanjay Ghemawat - 2004) para suportar computações paralelas e processamento em grandes conjuntos de dados através das funções Map e Reduce. Esse modelo trabalha com entradas e saídas no formato chave/valor.
+
+A base do processo está na seguinte sequência de passos:
+Dividir, mapear, combinar, reduzir e armazenar.
+
+Pelo diagrama do próprio artigo, na fase Map, os dados da entrada foram divididos entre os workers que farão o processamento da parte que lhes cabe. Já na fase Reduce, os workers irão trabalhar com os arquivos intermediários para reduzí-los em uma saída.
+
+---
+
+5 - O que é um cluster, cite seus componentes.
+
+RESPOSTA:
+
+Cluster é o nome dado a um sistema que relaciona máquinas agrupadas (computadores) para que trabalhem de maneira conjunta otimizando memória com o objetivo de processar determinadas tarefas. As máquinas dividem entre si as atividades de processamento e executam seu trabalho de maneira simultânea.
+
+Cada computador/máquina recebe o nome de nó que são conectados de forma que seja possível a inclusão ou retirada de nós com o cluster em funcionamento para não prejudicar o andamento do trabalho.
+
+Além disso, os clusters em geral possuem características e componentes específicos, como infiniband (comunicação e conexão entre sistemas de armazenamento e várias máquinas agrupadas com rendimento alto e latência baixa), storage (armazenamento), job scheduler (gerenciamento da ordem de processamento de dados), sistema operacional (as máquinas precisam operar o mesmo sistema operacional para realizarem tarefas em paralelo).
